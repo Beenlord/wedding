@@ -1,14 +1,12 @@
 {
   "name": "wedding",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build"
+    "dev": "nuxt dev",
+    "build": "nuxt build"
   },
   "dependencies": {
-    "vue": "^3.5.22"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^6.0.1",
-    "vite": "^7.1.10"
+    "nuxt": "^4.2.2"
   }
 }
