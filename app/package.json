@@ -1,12 +1,11 @@
 {
   "name": "wedding",
   "private": true,
-  "type": "module",
   "scripts": {
-    "dev": "nuxt dev",
+    "dev": "nuxt",
     "build": "nuxt build"
   },
   "dependencies": {
-    "nuxt": "^4.2.2"
+    "nuxt": "^2.18.1"
   }
 }
