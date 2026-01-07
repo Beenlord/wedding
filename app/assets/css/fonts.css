@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Sacramento';
+    src: url('@/assets/fonts/subset-Sacramento-Regular.eot');
+    src: local('Sacramento'), local('Sacramento-Regular'),
+        url('@/assets/fonts/subset-Sacramento-Regular.eot?#iefix') format('embedded-opentype'),
+        url('@/assets/fonts/subset-Sacramento-Regular.woff2') format('woff2'),
+        url('@/assets/fonts/subset-Sacramento-Regular.woff') format('woff'),
+        url('@/assets/fonts/subset-Sacramento-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
