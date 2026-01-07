@@ -5,13 +5,13 @@
       <div class="Calendar__year">2026</div>
     </div>
     <div class="Calendar__body">
-      <div class="Calendar__cell">Пн</div>
-      <div class="Calendar__cell">Вт</div>
-      <div class="Calendar__cell">Ср</div>
-      <div class="Calendar__cell">Чт</div>
-      <div class="Calendar__cell">Пт</div>
-      <div class="Calendar__cell">Сб</div>
-      <div class="Calendar__cell">Вс</div>
+      <div class="Calendar__cell Calendar__cell_head">Пн</div>
+      <div class="Calendar__cell Calendar__cell_head">Вт</div>
+      <div class="Calendar__cell Calendar__cell_head">Ср</div>
+      <div class="Calendar__cell Calendar__cell_head">Чт</div>
+      <div class="Calendar__cell Calendar__cell_head">Пт</div>
+      <div class="Calendar__cell Calendar__cell_head Calendar__cell_weekend">Сб</div>
+      <div class="Calendar__cell Calendar__cell_head Calendar__cell_weekend">Вс</div>
       <div class="Calendar__cell Calendar__cell_empty">27</div>
       <div class="Calendar__cell Calendar__cell_empty">28</div>
       <div class="Calendar__cell Calendar__cell_empty">29</div>
@@ -80,7 +80,8 @@ export default {
 
 .Calendar__month,
 .Calendar__year {
-  padding: 0 var(--padding) var(--padding);
+  padding: 0 var(--padding)
+    calc(var(--padding) * 2);
   text-transform: uppercase;
 }
 
@@ -91,25 +92,47 @@ export default {
 }
 
 .Calendar__cell {
-  padding: var(--padding);
+  padding: 0 var(--padding);
+  position: relative;
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-  aspect-ratio: 4/3;
+  aspect-ratio: 1/1;
 
   &.Calendar__cell_start {
-    color: red;
-    font-size: 3.2rem;
+    color: #B91112;
+    font-weight: 700;
+
+    &:after {
+      content: '';
+      width: 130%;
+      height: 130%;
+      position: absolute;
+      top: 50%; left: 50%;
+      translate: calc(-50% + 1px) calc(-50% + 1px);
+      background-image: url("@/assets/i/heart.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
 
   &.Calendar__cell_duration {
-    color: lightcoral;
+    color: #B91112;
   }
 
   &.Calendar__cell_empty {
     opacity: 0.4;
+    user-select: none;
+  }
+
+  &.Calendar__cell_head {
+    user-select: none;
+  }
+
+  &.Calendar__cell_weekend {
+    color: #B91112;
   }
 }
 </style>
