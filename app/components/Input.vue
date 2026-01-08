@@ -63,18 +63,22 @@ export default {
     padding: 2rem;
     font-size: var(--fs-l);
 
-    background: var(--bg-color);
-
-
+    color: var(--txt-color-first);
+    background: transparent;
     border: var(--border);
-    box-shadow: var(--shadow);
 
     &::placeholder {
       color: var(--txt-color-second);
+      transition: 0.1s ease color;
     }
 
     &:focus {
-      outline: var(--outline);
+      border: var(--border-active);
+      outline: var(--outline-active);
+
+      &::placeholder {
+        color: transparent;
+      }
     }
   }
 }

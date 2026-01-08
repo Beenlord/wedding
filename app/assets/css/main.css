@@ -3,14 +3,19 @@
     padding: 0;
     margin: 0;
 
-    --bg-color: #FCEBD1;
+    --bg-color: #FFF8F0;
 
-    --txt-color-first: #111;
+    --txt-color-first: #272529;
     --txt-color-second: #999;
+    --txt-color-accent: #D899A7;
 
-    --outline: 1px solid #93B875;
-    --border: 1px solid #B1BACB;
-    --shadow: 1px 4px 0px 2px #E9E3D5;
+    --border: 1px solid #8C8989;
+    --border-active: 1px solid #D899A7;
+
+    --shadow: 3px 3px 0 3px #F4F0F2;
+
+    --outline: 2px solid transparent;
+    --outline-active: 2px solid #D899A7;
 
     --fs-s: 2rem;
     --fs-m: 2.5rem;
@@ -27,4 +32,8 @@ body {
     font-size: var(--fs-m);
     font-family: 'Nimbus', Arial, "Times", serif;
     background-color: var(--bg-color);
+    background-image: url("/assets/background.png");
+    background-repeat: repeat;
+    background-position: center;
+    color: var(--txt-color-first);
 }
