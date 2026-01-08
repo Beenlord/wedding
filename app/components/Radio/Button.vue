@@ -4,13 +4,8 @@
       'RadioButton_active': checked,
     }]"
   >
-    <input
-      type="radio"
-      :checked="checked"
-      @change="onChange"
-    />
-    <span class="RadioButton__checkbox">
-    </span>
+    <input type="radio" :checked="checked" @change="onChange" />
+    <span class="RadioButton__checkbox" />
     <span>
       <slot />
     </span>
@@ -22,7 +17,7 @@
 export default {
   name: 'RadioButton',
   inject: [
-      'radio',
+    'radio',
   ],
   props: {
     value: {

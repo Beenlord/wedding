@@ -1,59 +1,61 @@
 <template>
   <Section class="SectionCalendar">
-    <div class="SectionCalendar__header">
-      <div class="SectionCalendar__month">АВГУСТ</div>
-      <div class="SectionCalendar__year">2026</div>
-    </div>
-    <div class="SectionCalendar__body">
-      <div class="SectionCalendar__cell SectionCalendar__cell_head">Пн</div>
-      <div class="SectionCalendar__cell SectionCalendar__cell_head">Вт</div>
-      <div class="SectionCalendar__cell SectionCalendar__cell_head">Ср</div>
-      <div class="SectionCalendar__cell SectionCalendar__cell_head">Чт</div>
-      <div class="SectionCalendar__cell SectionCalendar__cell_head">Пт</div>
-      <div class="SectionCalendar__cell SectionCalendar__cell_head SectionCalendar__cell_weekend">Сб</div>
-      <div class="SectionCalendar__cell SectionCalendar__cell_head SectionCalendar__cell_weekend">Вс</div>
-      <div class="SectionCalendar__cell SectionCalendar__cell_empty">27</div>
-      <div class="SectionCalendar__cell SectionCalendar__cell_empty">28</div>
-      <div class="SectionCalendar__cell SectionCalendar__cell_empty">29</div>
-      <div class="SectionCalendar__cell SectionCalendar__cell_empty">30</div>
-      <div class="SectionCalendar__cell SectionCalendar__cell_empty">31</div>
-      <div class="SectionCalendar__cell">1</div>
-      <div class="SectionCalendar__cell">2</div>
-      <div class="SectionCalendar__cell">3</div>
-      <div class="SectionCalendar__cell">4</div>
-      <div class="SectionCalendar__cell">5</div>
-      <div class="SectionCalendar__cell">6</div>
-      <div class="SectionCalendar__cell">7</div>
-      <div class="SectionCalendar__cell">8</div>
-      <div class="SectionCalendar__cell">9</div>
-      <div class="SectionCalendar__cell">10</div>
-      <div class="SectionCalendar__cell">11</div>
-      <div class="SectionCalendar__cell">12</div>
-      <div class="SectionCalendar__cell SectionCalendar__cell_start">13</div>
-      <div class="SectionCalendar__cell SectionCalendar__cell_duration">14</div>
-      <div class="SectionCalendar__cell SectionCalendar__cell_duration">15</div>
-      <div class="SectionCalendar__cell">16</div>
-      <div class="SectionCalendar__cell">17</div>
-      <div class="SectionCalendar__cell">18</div>
-      <div class="SectionCalendar__cell">19</div>
-      <div class="SectionCalendar__cell">20</div>
-      <div class="SectionCalendar__cell">21</div>
-      <div class="SectionCalendar__cell">22</div>
-      <div class="SectionCalendar__cell">23</div>
-      <div class="SectionCalendar__cell">24</div>
-      <div class="SectionCalendar__cell">25</div>
-      <div class="SectionCalendar__cell">26</div>
-      <div class="SectionCalendar__cell">27</div>
-      <div class="SectionCalendar__cell">28</div>
-      <div class="SectionCalendar__cell">29</div>
-      <div class="SectionCalendar__cell">30</div>
-      <div class="SectionCalendar__cell">31</div>
-      <div class="SectionCalendar__cell SectionCalendar__cell_empty">1</div>
-      <div class="SectionCalendar__cell SectionCalendar__cell_empty">2</div>
-      <div class="SectionCalendar__cell SectionCalendar__cell_empty">3</div>
-      <div class="SectionCalendar__cell SectionCalendar__cell_empty">4</div>
-      <div class="SectionCalendar__cell SectionCalendar__cell_empty">5</div>
-      <div class="SectionCalendar__cell SectionCalendar__cell_empty">6</div>
+    <div class="SectionCalendar__inner">
+      <div class="SectionCalendar__header">
+        <div class="SectionCalendar__month">АВГУСТ</div>
+        <div class="SectionCalendar__year">2026</div>
+      </div>
+      <div class="SectionCalendar__body">
+        <div class="SectionCalendar__cell SectionCalendar__cell_head">Пн</div>
+        <div class="SectionCalendar__cell SectionCalendar__cell_head">Вт</div>
+        <div class="SectionCalendar__cell SectionCalendar__cell_head">Ср</div>
+        <div class="SectionCalendar__cell SectionCalendar__cell_head">Чт</div>
+        <div class="SectionCalendar__cell SectionCalendar__cell_head">Пт</div>
+        <div class="SectionCalendar__cell SectionCalendar__cell_head SectionCalendar__cell_weekend">Сб</div>
+        <div class="SectionCalendar__cell SectionCalendar__cell_head SectionCalendar__cell_weekend">Вс</div>
+        <div class="SectionCalendar__cell SectionCalendar__cell_empty">27</div>
+        <div class="SectionCalendar__cell SectionCalendar__cell_empty">28</div>
+        <div class="SectionCalendar__cell SectionCalendar__cell_empty">29</div>
+        <div class="SectionCalendar__cell SectionCalendar__cell_empty">30</div>
+        <div class="SectionCalendar__cell SectionCalendar__cell_empty">31</div>
+        <div class="SectionCalendar__cell">1</div>
+        <div class="SectionCalendar__cell">2</div>
+        <div class="SectionCalendar__cell">3</div>
+        <div class="SectionCalendar__cell">4</div>
+        <div class="SectionCalendar__cell">5</div>
+        <div class="SectionCalendar__cell">6</div>
+        <div class="SectionCalendar__cell">7</div>
+        <div class="SectionCalendar__cell">8</div>
+        <div class="SectionCalendar__cell">9</div>
+        <div class="SectionCalendar__cell">10</div>
+        <div class="SectionCalendar__cell">11</div>
+        <div class="SectionCalendar__cell">12</div>
+        <div class="SectionCalendar__cell SectionCalendar__cell_start">13</div>
+        <div class="SectionCalendar__cell SectionCalendar__cell_duration">14</div>
+        <div class="SectionCalendar__cell SectionCalendar__cell_duration">15</div>
+        <div class="SectionCalendar__cell">16</div>
+        <div class="SectionCalendar__cell">17</div>
+        <div class="SectionCalendar__cell">18</div>
+        <div class="SectionCalendar__cell">19</div>
+        <div class="SectionCalendar__cell">20</div>
+        <div class="SectionCalendar__cell">21</div>
+        <div class="SectionCalendar__cell">22</div>
+        <div class="SectionCalendar__cell">23</div>
+        <div class="SectionCalendar__cell">24</div>
+        <div class="SectionCalendar__cell">25</div>
+        <div class="SectionCalendar__cell">26</div>
+        <div class="SectionCalendar__cell">27</div>
+        <div class="SectionCalendar__cell">28</div>
+        <div class="SectionCalendar__cell">29</div>
+        <div class="SectionCalendar__cell">30</div>
+        <div class="SectionCalendar__cell">31</div>
+        <div class="SectionCalendar__cell SectionCalendar__cell_empty">1</div>
+        <div class="SectionCalendar__cell SectionCalendar__cell_empty">2</div>
+        <div class="SectionCalendar__cell SectionCalendar__cell_empty">3</div>
+        <div class="SectionCalendar__cell SectionCalendar__cell_empty">4</div>
+        <div class="SectionCalendar__cell SectionCalendar__cell_empty">5</div>
+        <div class="SectionCalendar__cell SectionCalendar__cell_empty">6</div>
+      </div>
     </div>
   </Section>
 </template>
@@ -68,6 +70,11 @@ export default {
 
 .SectionCalendar {
   --padding: 5px;
+}
+
+.SectionCalendar__inner {
+  margin: 0 auto;
+  width: 95%;
 }
 
 .SectionCalendar__header {
