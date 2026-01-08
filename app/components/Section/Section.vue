@@ -41,5 +41,9 @@ export default {
     top: 0; left: 0;
     object-fit: cover;
   }
+
+  @media screen and (max-width: 425px) {
+    padding: 0 2.2rem;
+  }
 }
 </style>

@@ -2,6 +2,20 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+
+    --bg-color: #FCEBD1;
+
+    --txt-color-first: #111;
+    --txt-color-second: #999;
+
+    --outline: 1px solid #93B875;
+    --border: 1px solid #B1BACB;
+    --shadow: 1px 4px 0px 2px #E9E3D5;
+
+    --fs-s: 2rem;
+    --fs-m: 2.5rem;
+    --fs-l: 3rem;
+    --fs-xl: 4rem;
 }
 
 :root {
@@ -10,6 +24,7 @@
 
 html,
 body {
-    font-size: 2rem;
+    font-size: var(--fs-m);
     font-family: 'Nimbus', Arial, "Times", serif;
+    background-color: var(--bg-color);
 }
