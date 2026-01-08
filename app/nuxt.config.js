@@ -1,4 +1,5 @@
 export default {
+    target: 'static',
     server: {
         host: process.env.HOST,
         port: process.env.PORT,
@@ -23,4 +24,9 @@ export default {
         '@/assets/css/fonts.css',
     ],
     components: true,
+    router: {
+        base: process.env.DEPLOY_ENV === 'GH_PAGES'
+            ? '/REPO_NAME/'
+            : '/',
+    },
 };
